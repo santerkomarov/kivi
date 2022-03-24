@@ -1,0 +1,37 @@
+$body-color: #ccc;
+h2 {
+   color: darkslategray;
+}
+body {
+   background-color: $body-color;
+   padding: 0;
+   margin: 0;
+   font-family:"Montserrat", sans-serif;
+   .start-wrap {
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px;
+      background-color: #f99;
+      margin: 0 auto;
+   }
+   .wrap {
+      .nav {
+         max-width: 1000px;
+         .nav__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            list-style-type: none;
+
+            .nav__link {
+               text-decoration: none;
+            }
+         }
+      }
+   }
+   
+
+}

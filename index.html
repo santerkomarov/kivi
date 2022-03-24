@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="kivimyynti, kiviasennus, kivirakentamisen palvelut, talonrakennus, infrarakentaminen">
+    <meta name="description" content="Kivipaasi Oy tarjoaa kivimyynti- ja asennuspalveluita sekä infra- ja talonrakennuksen kivirakentamispalveluita etupäässä rakennusliikkeille ja julkisille toimijoille koko Suomessa.">
+    <meta property="og:title" content="Kivipaasi Oy | kivimyynti-ja asennuspalvelut | talonrakennus- ja infrarakentamisen palvelut | Luhtajoki | Suomi">
+    <meta property="og:description" content="Kivipaasi Oy tarjoaa kivimyynti- ja asennuspalveluita sekä infra- ja talonrakennuksen kivirakentamispalveluita etupäässä rakennusliikkeille ja julkisille toimijoille koko Suomessa.">
+    <title>Kivipaasi Oy | kivimyynti-ja asennuspalvelut | talonrakennus- ja infrarakentamisen palvelut | Luhtajoki | Suomi</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./dist/images/logo1.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/app.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	
+</head>
+
+<body>
+    <div id="app">
+        <index></index>
+    </div>
+
+    <script src="./dist/js/app.js"></script>
+    <script>
+        let countGlob = 1;
+        function count() { 
+            if (countGlob < 40) {
+                var c = $('.banner').each(function () {
+                      $(this).prop('Counter',1).animate(
+                        {
+                        Counter: $(this).text() 
+                        }, {
+                           duration: 2500,
+                           easing: 'swing',
+                           step: function (w) {
+                              $(this).text(Math.round(w));
+                              }
+                        });
+                 });
+                 countGlob += 1;
+            } else {
+                return false;
+            }	
+        }
+        setInterval( count, 4000 );
+    </script>
+</body>
+
+</html>

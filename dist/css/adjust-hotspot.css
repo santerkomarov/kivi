@@ -1,0 +1,58 @@
+.ui__vue_hotspot_hotspot[data-v-243de032]{
+   height:14px;
+   width:14px;
+   position:absolute;
+   border-radius:50%;
+   cursor:pointer;
+   z-index:1;
+   margin-left:-10px;
+   margin-top:-10px
+} .ui__vue_hotspot_hotspot[data-v-243de032]:after {
+   content:' ';
+   position:absolute;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border-radius:inherit;
+   background: transparent;
+   animation: pulse 1s infinite;
+} 
+.ui__vue_hotspot_hotspot>div[data-v-243de032]{
+   width:100px;
+   height:94px;
+   margin:-104px -60px;
+   border-radius:4px;
+   overflow:hidden;
+   font-size:10px;
+   display:none
+}
+.ui__vue_hotspot_hotspot.active>div[data-v-243de032]{
+   display:block;
+}
+.ui__vue_hotspot_hotspot.active>div[data-v-243de032]:before{
+   border:solid transparent;
+   content:' ';
+   height:0;
+   left:0;
+   position:absolute;
+   width:0;
+   border-width:10px;
+   border-left-color:rgba(255,255,255,.4);
+   transform:rotate(90deg);top:-10px;
+}
+.ui__vue_hotspot_hotspot>div>.ui__vue_hotspot_title[data-v-243de032]{
+   height:20px;
+   line-height:20px;
+   font-weight:700;
+   padding:4px 10px;
+   transition:opacity .2s ease-in;
+}
+.ui__vue_hotspot_hotspot>div>.ui__vue_hotspot_message[data-v-243de032]{
+   margin-top:2px;
+   padding:10px 10px;
+   height:72px;
+   overflow-y:auto;
+   transition:opacity .2s ease-in;
+}
